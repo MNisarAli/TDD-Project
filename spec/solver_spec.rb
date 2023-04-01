@@ -21,4 +21,11 @@ describe Solver do
       end
     end
   end
+
+  describe 'Testing reverse method' do
+    it 'returns a reversed string' do
+      expect(Solver.new.reverse('hello')).to eq('olleh')
+      expect(Solver.new.reverse('world')).to eq('dlrow')
+    end
+  end
 end
