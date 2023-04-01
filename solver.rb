@@ -1,6 +1,8 @@
 class Solver
   def factorial(num)
-    # to be implemented
+    raise ArgumentError, 'number must be a non-negative integer' if num.negative?
+
+    (1..num).reduce(1, :*)
   end
 
   def reverse(word)
